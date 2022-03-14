@@ -55,7 +55,7 @@ class Voucher
             "User-Agent: $this->USER_AGENT"
         );
         curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
-        curl_setopt($curl, CURLOPT_SSLVERSION, 7); //Thanks to Permisz
+        curl_setopt($curl, CURLOPT_SSLVERSION, 7); // Thanks to Permisz
 
         $data = json_encode(array(
             'mobile' => $this->mobile,
