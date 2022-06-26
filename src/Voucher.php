@@ -22,7 +22,7 @@ class Voucher
 
     public function verify()
     {
-        $url = "https://gift.truemoney.com/campaign/vouchers/$this->voucher/verify?mobile=$this->mobile";
+        $url = "https://gift.truemoney.com/campaign/vouchers/{$this->voucher}/verify?mobile={$this->mobile}";
 
         $curl = curl_init($url);
         curl_setopt($curl, CURLOPT_URL, $url);
@@ -43,7 +43,7 @@ class Voucher
 
     public function redeem()
     {
-        $url = "https://gift.truemoney.com/campaign/vouchers/$this->voucher/redeem";
+        $url = "https://gift.truemoney.com/campaign/vouchers/{$this->voucher}/redeem";
 
         $curl = curl_init($url);
         curl_setopt($curl, CURLOPT_URL, $url);
