@@ -22,3 +22,4 @@ if ($_GET['action'] == 'verify')
 else if ($_GET['action'] == 'redeem')
     die($voucher->redeem());
 ```
+
